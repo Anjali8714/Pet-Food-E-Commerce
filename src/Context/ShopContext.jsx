@@ -5,7 +5,8 @@ export const Shopcontext = createContext();
 
 const ShopContextProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
-   
+    const [cart , setCart] = useState([]);
+
     const delivery_fee = 10;
 
     useEffect(() => { 
@@ -22,8 +23,27 @@ const ShopContextProvider = ({ children }) => {
         fetchData();
     }, []); 
 
+    useEffect(() => {
+        axios.get('http://localhost:3001/user/${id}')
+        .then((res) => {
+            setCart(res.data.cart);
+        })
+        .catch((error) => console.log(error));
+    })
+
+    const addToCart = (item) => {
+        const findCart = cart.find((cartitem) => item.id === cartitem.id);
+        if(findCart) {
+            //alert('item already added')
+            return;
+        }else{
+            const updateCart = [...cart , item];
+        }
+    }
+
+
     return (
-        <Shopcontext.Provider value={{ products, delivery_fee }}>
+        <Shopcontext.Provider value={{ products, delivery_fee,cart }}>
             {children}
         </Shopcontext.Provider>
     );

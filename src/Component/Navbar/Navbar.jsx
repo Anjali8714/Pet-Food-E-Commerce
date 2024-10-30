@@ -23,7 +23,7 @@ const Navbar = () => {
 
   //  Peticons
 
-    <div className="bg-yellow-400">
+    <div className="bg-yellow-400 ">
       <div className="container flex flex-col md:flex-row justify-between items-center p-4">
         <div className="flex space-x-2 justify-start">
           <MdOutlinePets size={45} />
@@ -76,10 +76,10 @@ const Navbar = () => {
           )}
       </div>
 
-{/*   LoginSignup */}
+{/*   Registration&Login */}
 
 <div>
-<button onClick={ () => navigate('/loginsignup')} className='font-bold p-4 text-xl'>Singin</button>
+<button onClick={ () => navigate('/login')} className='font-bold p-4 text-xl'>Singin</button>
 </div>
 
       </div>

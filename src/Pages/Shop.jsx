@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext} from 'react'
 import { Shopcontext } from '../Context/ShopContext';
 
 const Shop = () => {
@@ -6,17 +6,18 @@ const Shop = () => {
 const {products} = useContext(Shopcontext);
 
   return (
-    <div>
+    <div className='p-4'>
       {products.length === 0 ?( <h1>It is a empty</h1>) : (
-        <div>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6'>
         {products.map((product) => ( <div key={product.id}>
-          <div>
-            <img src={product.url} alt={product.title} className="w-60 h-50 rounded-t object-cover" />
-            <p>Title : {product.title}</p>
+          <div key={product.id} className='border border-gray-200 rounded-lg p-4'>
+            <img src={product.url} alt={product.title} className="w-full h-40 rounded-t object-cover mb-2" />
+            <p className="font-semibold">Title : {product.title}</p>
             <p>Price : ₹{Number(product.price)}</p>
-            {product.quantity === 0 && (<span className='text-red-500 py-1 px-3'>Out of stock</span>)}             
-          </div>
+            {product.quantity === 0 && (<span className='text-red-500 py-1 px-3 inline-block mt-2'>Out of stock</span>)}     
 
+          </div>
+          <button  className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Add to Cart</button>
         </div>
 ))}
 </div>

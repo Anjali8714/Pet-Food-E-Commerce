@@ -1,157 +1,178 @@
 {
-    "products":[
-        {
-          "id": "1",
-          "title": "Pedigree",
-          "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg",
-          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-          "price": 599,
-          "quantity": 10,
-          "category": "Dog"
-        },
-        {
-          "id": "2",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Dog"
-        },
-        {
-          "id": "3",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "4",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "5",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "6",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Dog"
-        },
-        {
-          "id": "7",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Dog"
-        },
-        {
-          "id": "8",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Dog"
-        },
-        {
-          "id": "9",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Dog"
-        },
-        {
-          "id": "10",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "11",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "12",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "13",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Dog"
-        },
-        {
-          "id": "14",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "15",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Dog"
-        },
-        {
-          "id": "16",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        },
-        {
-          "id": "17",
-          "title": "",
-          "url": "",
-          "description": "Extra Soft Touch Lamb Toys",
-          "price": 599,
-          "quantity": 1,
-          "category": "Cat"
-        }
-    ]
+  "user": [
+    {
+      "id": "e178",
+      "username": "Anjali.T",
+      "email": "anjali@gmail.com",
+      "password": "123456789",
+      "cart": [],
+      "order": [],
+      "status": true
+    },
+    {
+      "id": "fce9",
+      "username": "Anjali_T8714",
+      "email": "anjalithottiyil@gmail.com",
+      "password": "123450987",
+      "cart": [],
+      "order": [],
+      "status": true
+    }
+    
+  ],
+  "products": [
+    {
+      "id": "1",
+      "title": "Pedigree",
+      "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg",
+      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+      "price": 599,
+      "quantity": 10,
+      "category": "Dog"
+    },
+    {
+      "id": "2",
+      "title": "Freshpet",
+      "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 129,
+      "quantity": 1,
+      "category": "Dog"
+    },
+    {
+      "id": "3",
+      "title": "Whiskas",
+      "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-global-brand-produced-nestle-petcare-st-louis-missouri-based-subsidiary-122681903.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 479,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "4",
+      "title": "Friskies",
+      "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-122681970.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 679,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "5",
+      "title": "Felix Junior",
+      "url": "https://dailyhornet.com/wp-content/uploads/2018/11/Dog-Food-Generic.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 789,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "6",
+      "title": "Healthy Pet Food",
+      "url": "https://www.puprise.com/wp-content/uploads/2019/08/Himalaya-Healthy-Pet-Food-Meat-Rice-Dog-Food.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 459,
+      "quantity": 1,
+      "category": "Dog"
+    },
+    {
+      "id": "7",
+      "title": "Milk Bone",
+      "url": "https://i.pinimg.com/originals/ce/95/80/ce9580a098ececc425c02c2a45b42263.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 599,
+      "quantity": 1,
+      "category": "Dog"
+    },
+    {
+      "id": "8",
+      "title": "Cesor",
+      "url": "https://s7d1.scene7.com/is/image/PETCO/2384976-center-1",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 359,
+      "quantity": 1,
+      "category": "Dog"
+    },
+    {
+      "id": "9",
+      "title": "Charli",
+      "url": "https://www.ipackdesign.com/wp-content/uploads/2020/08/pet-food-design.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 799,
+      "quantity": 1,
+      "category": "Dog"
+    },
+    {
+      "id": "10",
+      "title": "Kit Cat",
+      "url": "https://kitcat.com.sg/wp-content/uploads/2022/02/DRY-Food-Catagory.png",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 399,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "11",
+      "title": "Meow",
+      "url": "https://www.topvaluereviews.net/wp-content/uploads/2016/05/811rpY-l4L._SL1500_.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 699,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "12",
+      "title": "Special Kitty",
+      "url": "https://i5.walmartimages.com/asr/2b879f4c-99c9-4f9a-a532-8c445658cdf4_2.b45562bccfcdf6d7c1c8d4daeab994a0.jpeg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 599,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "13",
+      "title": "Royal Canin",
+      "url": "https://www.designerpeople.com/wp-content/uploads/2020/06/dog-food-packaging-design-2.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 599,
+      "quantity": 1,
+      "category": "Dog"
+    },
+    {
+      "id": "14",
+      "title": "Royal Canin",
+      "url": "https://s7d1.scene7.com/is/image/PETCO/2393661-center-1",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 849,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "15",
+      "title": "Gather",
+      "url": "https://ucarecdn.com/e2e062f5-b963-4a4a-ad59-80ba371a88dd/-/quality/lighter/-/format/auto/-/scale_crop/1920x1080/center/",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 449,
+      "quantity": 1,
+      "category": "Dog"
+    },
+    {
+      "id": "16",
+      "title": "All Cats",
+      "url": "https://aller-petfood.com/wp-content/uploads/2017/09/ALL_CAT.jpg",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 499,
+      "quantity": 1,
+      "category": "Cat"
+    },
+    {
+      "id": "17",
+      "title": "GoCat",
+      "url": "https://assets.iceland.co.uk/i/iceland/Go-Cat_Adult_Dry_Cat_Food_Chicken_and_Duck_10kg_71128_T1.jpg?$pdpzoom$",
+      "description": "Extra Soft Touch Lamb Toys",
+      "price": 549,
+      "quantity": 1,
+      "category": "Cat"
+    }
+  ]
 }
