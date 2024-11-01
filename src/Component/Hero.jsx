@@ -2,6 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 const Hero = () => {
+  
 
   const navigate = useNavigate()
 
@@ -25,8 +26,8 @@ const Hero = () => {
 
     <div className='flex justify-center md:justify-end'>
         <img src="https://static.vecteezy.com/system/resources/previews/006/470/722/original/pet-shop-logo-design-template-modern-animal-icon-label-for-store-veterinary-clinic-hospital-shelter-business-services-flat-illustration-background-with-dog-cat-and-horse-free-vector.jpg" className='w-2/3' alt="error" />
+   
     </div>
-
     </div>
   )
 }

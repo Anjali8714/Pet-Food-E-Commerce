@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 
 const Cart = () => {
 const navigate = useNavigate()
-const {cart ,removeFromcart , incrementQantity , decrementQuantity} = useContext(Shopcontext)
+const {cart ,removeFromcart , incrementQuantity , decrementQuantity} = useContext(Shopcontext)
   
   return (
     <div className="min-h-screen p-6 bg-gray-100">
@@ -24,7 +24,7 @@ const {cart ,removeFromcart , incrementQantity , decrementQuantity} = useContext
           
 
           <div className="flex items-center space-x-4">
-          <button onClick={() => incrementQantity(item.id)} className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-md bg-white hover:bg-gray-100 text-lg font-semibold text-gray-700">+</button>
+          <button onClick={() => incrementQuantity(item.id)} className="w-8 h-8 flex items-center justify-center border border-gray-300 rounded-md bg-white hover:bg-gray-100 text-lg font-semibold text-gray-700">+</button>
           <span className="text-lg font-semibold">{item.quantity}</span>
 
           <button onClick={() => decrementQuantity(item.id)}
@@ -44,7 +44,7 @@ const {cart ,removeFromcart , incrementQantity , decrementQuantity} = useContext
       ))}
       <div className="border-t border-gray-300 pt-4 mt-6 flex justify-between items-center bg-gray-100">
             <p className="text-xl font-bold text-gray-800">
-              Total: ₹{cart.reduce((acc, item) => acc + item.quantity * item.price, 0)}
+              Total: ₹{cart.reduce((acc, item) => acc + (item.quantity * item.price), 0)}
             </p>
             <button onClick={() => navigate ('/paymentpage')} className="px-6 py-2 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition-colors duration-300">
               Order

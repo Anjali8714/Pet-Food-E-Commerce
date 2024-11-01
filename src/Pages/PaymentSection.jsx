@@ -8,7 +8,7 @@ const PaymentSection = () => {
     cardNumber: '',
     expiry: '',
     cvv: '',
-    paymentMethod: 'card', // default to card
+    paymentMethod: 'card'
   });
 
   const handleChange = (e) => {
@@ -19,7 +19,7 @@ const PaymentSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Payment Data:', formData);
-    // Handle form submission logic (e.g., validation, API call)
+    
   };
 
   return (
@@ -107,32 +107,7 @@ const PaymentSection = () => {
                 required
               />
             </div>
-            <div className="flex space-x-4">
-              <div className="w-1/2">
-                <label className="block text-gray-700 text-sm font-bold mb-2">Expiry Date</label>
-                <input
-                  type="text"
-                  name="expiry"
-                  value={formData.expiry}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="MM/YY"
-                  required
-                />
-              </div>
-              <div className="w-1/2">
-                <label className="block text-gray-700 text-sm font-bold mb-2">CVV</label>
-                <input
-                  type="text"
-                  name="cvv"
-                  value={formData.cvv}
-                  onChange={handleChange}
-                  className="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500"
-                  placeholder="123"
-                  required
-                />
-              </div>
-            </div>
+            
           </div>
         )}
 

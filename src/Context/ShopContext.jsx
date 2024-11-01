@@ -8,7 +8,7 @@ export const Shopcontext = createContext();
 const ShopContextProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [cart , setCart] = useState([]);
-
+    
        
 
     useEffect(() => { 
@@ -39,9 +39,9 @@ const ShopContextProvider = ({ children }) => {
         const findCart = cart.find((cartitem) => item.id === cartitem.id);
     
         <Toaster/>
-        toast.success('Item added successfully🛒');
+        
         if(findCart) {
-            
+            toast.success('Item added successfully🛒');
             return;
             
         }else{
@@ -68,7 +68,7 @@ const ShopContextProvider = ({ children }) => {
         
     } 
 
-    const incrementQantity = (itemid) => {
+    const incrementQuantity = (itemid) => {
         const id = localStorage.getItem("id");
         setCart((prevCart) => {
             const newCart = prevCart.map((item) => item.id === itemid ? {...item ,quantity: item.quantity + 1 } : item)
@@ -108,7 +108,7 @@ const ShopContextProvider = ({ children }) => {
 
 
     return (
-        <Shopcontext.Provider value={{ products , cart , addToCart , removeFromcart , incrementQantity , decrementQuantity}}>
+        <Shopcontext.Provider value={{ products , cart , addToCart , removeFromcart , incrementQuantity , decrementQuantity}}>
             {children}
         </Shopcontext.Provider>
     );
