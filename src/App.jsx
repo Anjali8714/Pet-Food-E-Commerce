@@ -7,6 +7,9 @@ import Category from './Pages/Category'
 import Cart from './Pages/Cart'
 import LoginPage from './Pages/LoginPage'
 import RegistrationPage from './Pages/RegistrationPage'
+import PaymentSection from './Pages/PaymentSection'
+import { Toaster } from 'react-hot-toast'
+import Footer from './Component/Footer'
 
 
 function App() {
@@ -14,7 +17,7 @@ function App() {
 
   return (
     <>
-        
+        <Toaster/>
         <Navbar/>
         <Routes>
           <Route path='/' Component={Home}/>
@@ -23,9 +26,11 @@ function App() {
           <Route path='cart' Component={Cart}/>
           <Route path='login' Component={LoginPage} />
           <Route path='registration' Component={RegistrationPage}/>
-         
+          <Route path='paymentpage' Component={PaymentSection}/>
+        
           
         </Routes>
+        <Footer/>
         
     </>
   )

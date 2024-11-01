@@ -6,6 +6,8 @@ import { FaCartShopping } from "react-icons/fa6";
 import { CgProfile } from "react-icons/cg";
 import { IoMenuOutline } from "react-icons/io5";
 import { useNavigate } from 'react-router-dom';
+import { CiSearch } from "react-icons/ci";
+
 const Navbar = () => {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [menu, setMenu] = useState(false);
@@ -18,6 +20,12 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenu(prev => !prev);
   };
+
+const handleLogout = () => {
+  localStorage.removeItem('id');
+  alert('Logout successfully');
+  navigate('/login')
+}
 
   return (
 
@@ -40,13 +48,21 @@ const Navbar = () => {
           <Link to='category'>Category</Link>
         </div>
 
+{/* SearchBar */}
+
+<div className="flex items-center justify-between bg-white border border-gray-300 rounded-md p-2 w-50">
+  <CiSearch className="text-gray-500 text-xl mr-2" />
+  <input type="text" placeholder="Search..." className="w-full outline-none text-gray-700" />
+</div>
+
+
      {/* Cart icon and profile    */}
 
 
 <div className='lg:flex flex-row hidden '>
         <div className='flex items-center'>
           <Link to='cart'><FaCartShopping size={25} /></Link>
-          <p className=''>10</p>
+          {/* <p>}</p> */}
         </div>
 
         <div className='relative p-2 cursor-pointer' onClick={toggleDropdown}>
@@ -55,10 +71,11 @@ const Navbar = () => {
             <div className='absolute right-0 pt-4'>
               <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
                 <Link to='/profile' className='cursor-pointer hover:text-black'>My Profile</Link>
-                <Link to='/logout' className='cursor-pointer hover:text-black'>Logout</Link>
+                <button className='hover:text-black' onClick={handleLogout}>Logout</button>
               </div>
             </div>
           )}
+        {localStorage.getItem('id')&&(localStorage.getItem('name'))}
         </div>
       </div>
       {/* Menuicon */}
@@ -70,7 +87,7 @@ const Navbar = () => {
               <div className='flex flex-col gap-2 w-36 py-3 px-5 bg-slate-100 text-gray-500 rounded'>
                 <Link to='/cart'>Cart</Link>
                 <Link to='/profile' className='cursor-pointer hover:text-black'>My Profile</Link>
-                <Link to='/logout' className='cursor-pointer hover:text-black'>Logout</Link>
+                <button className='hover:text-black' onClick={handleLogout}>Logout</button>
               </div>
             </div>
           )}
@@ -79,7 +96,7 @@ const Navbar = () => {
 {/*   Registration&Login */}
 
 <div>
-<button onClick={ () => navigate('/login')} className='font-bold p-4 text-xl'>Singin</button>
+{/* <button onClick={ () => navigate('/login')} className='font-bold p-4 text-xl'>Singin</button> */}
 </div>
 
       </div>
@@ -88,3 +105,7 @@ const Navbar = () => {
 }
 
 export default Navbar;
+
+
+
+

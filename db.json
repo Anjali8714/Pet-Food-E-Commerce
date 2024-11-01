@@ -5,7 +5,26 @@
       "username": "Anjali.T",
       "email": "anjali@gmail.com",
       "password": "123456789",
-      "cart": [],
+      "cart": [
+        {
+          "id": "2",
+          "title": "Freshpet",
+          "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
+          "description": "Extra Soft Touch Lamb Toys",
+          "price": 129,
+          "quantity": 10,
+          "category": "Dog"
+        },
+        {
+          "id": "1",
+          "title": "Pedigree",
+          "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg",
+          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+          "price": 599,
+          "quantity": 1,
+          "category": "Dog"
+        }
+      ],
       "order": [],
       "status": true
     },
@@ -17,8 +36,16 @@
       "cart": [],
       "order": [],
       "status": true
+    },
+    {
+      "id": "6db2",
+      "username": "anju",
+      "email": "anju123@gmail.com",
+      "password": "123456789",
+      "cart": [],
+      "order": [],
+      "status": true
     }
-    
   ],
   "products": [
     {
@@ -27,7 +54,7 @@
       "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg",
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 599,
-      "quantity": 10,
+      "quantity": 1,
       "category": "Dog"
     },
     {
@@ -36,7 +63,7 @@
       "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
       "description": "Extra Soft Touch Lamb Toys",
       "price": 129,
-      "quantity": 1,
+      "quantity": 10,
       "category": "Dog"
     },
     {
@@ -45,7 +72,7 @@
       "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-global-brand-produced-nestle-petcare-st-louis-missouri-based-subsidiary-122681903.jpg",
       "description": "Extra Soft Touch Lamb Toys",
       "price": 479,
-      "quantity": 1,
+      "quantity": 5,
       "category": "Cat"
     },
     {

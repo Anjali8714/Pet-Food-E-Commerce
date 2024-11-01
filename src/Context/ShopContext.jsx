@@ -1,5 +1,7 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
+import toast, { Toaster } from 'react-hot-toast';
+
 
 export const Shopcontext = createContext();
 
@@ -7,14 +9,14 @@ const ShopContextProvider = ({ children }) => {
     const [products, setProducts] = useState([]);
     const [cart , setCart] = useState([]);
 
-    const delivery_fee = 10;
+       
 
     useEffect(() => { 
         async function fetchData() {
             try {
-                const response = await axios.get('http://localhost:3001/products');
+                const response = await axios.get(`http://localhost:3001/products`);
                 setProducts(response.data);
-                console.log(products);
+                
                 
             } catch (error) {
                 console.log(error.message);
@@ -24,26 +26,89 @@ const ShopContextProvider = ({ children }) => {
     }, []); 
 
     useEffect(() => {
-        axios.get('http://localhost:3001/user/${id}')
+        const id = localStorage.getItem("id");
+        axios.get(`http://localhost:3001/user/${id}`)
         .then((res) => {
             setCart(res.data.cart);
         })
         .catch((error) => console.log(error));
     })
 
-    const addToCart = (item) => {
+    const addToCart =  (item) => {
+        const id = localStorage.getItem("id"); 
         const findCart = cart.find((cartitem) => item.id === cartitem.id);
+    
+        <Toaster/>
+        toast.success('Item added successfully🛒');
         if(findCart) {
-            //alert('item already added')
+            
             return;
+            
         }else{
-            const updateCart = [...cart , item];
+            const updatedCart = [...cart , item];
+           
+
+            axios
+             .patch(`http://localhost:3001/user/${id}`,{cart : updatedCart})
+             .then((res) => console.log(`success`))
+             .catch((error) => console.log(`error`))
+             
+             
         }
     }
 
+    const  removeFromcart = (itemid) => {
+        const id = localStorage.getItem("id"); 
+        const removedata  =cart.filter((cartitem) => cartitem.id !== itemid);
+        axios
+        .patch(`http://localhost:3001/user/${id}`,{cart : removedata })
+        .then((res) => console.log(`success`))
+        .catch((error) => console.log(error))
+        
+        
+    } 
+
+    const incrementQantity = (itemid) => {
+        const id = localStorage.getItem("id");
+        setCart((prevCart) => {
+            const newCart = prevCart.map((item) => item.id === itemid ? {...item ,quantity: item.quantity + 1 } : item)
+        
+
+        axios
+        .patch(`http://localhost:3001/user/${id}`,{cart : newCart })
+        .then((res) => {
+            console.log(`success`);
+        })
+        .catch((error) => {
+            console.log('Error updating cart : ', error);
+        })
+        return newCart
+    })
+}
+
+    const decrementQuantity = (itemid) => {
+        const id = localStorage.getItem("id");
+        setCart ((prevCart) =>{
+             
+            const newCart = prevCart.map ((item) => item.id === itemid ? {...item , quantity: item.quantity > 1 ? item.quantity - 1 : item.quantity} : item);
+        axios 
+        .patch(`http://localhost:3001/user/${id}`,{cart : newCart })
+    
+    .then((res) => {
+        console.log("Cart updated successfully");
+        
+    })
+    .catch((error) => {
+        console.log("Error updating cart :" , error);
+        
+    })
+    return newCart;
+})
+}
+
 
     return (
-        <Shopcontext.Provider value={{ products, delivery_fee,cart }}>
+        <Shopcontext.Provider value={{ products , cart , addToCart , removeFromcart , incrementQantity , decrementQuantity}}>
             {children}
         </Shopcontext.Provider>
     );

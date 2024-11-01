@@ -30,7 +30,7 @@ const LoginPage = () => {
     
       if (foundUser) {
         localStorage.setItem('id', foundUser.id);  
-       
+        localStorage.setItem('name', foundUser.username);  
         alert('Login successful');
         setTimeout(() => {
           navigate('/');
