@@ -3,8 +3,8 @@ import { Shopcontext } from '../Context/ShopContext'
 
 
 const Order = () => {
-  const {products} = useContext(Shopcontext)
-
+  const {cart} = useContext(Shopcontext)
+  
   return (
     <div className='border-t pt-16'>
      <div className='text-2xl'>
@@ -12,10 +12,16 @@ const Order = () => {
      </div>
      <div>
       {
-        products.map((item , index) => (
+        cart.map((item , index) => (
           <div key={index} className='py-4 border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4'>
             <div className='flex items-start gap-6 text-sm'>
-              <img src={products.url} alt={products.title} className='w-16 sm:w-20'/>
+              <img src={item.url}  className='w-16 sm:w-20'/>
+              <div>
+                <p className='sm:text-base font-medium'>{item.title}</p>
+                <p className='text-md '>₹{item.price}</p>
+                  <p className='text-md'>Quantity: {item.quantity}</p>
+                  <p className='text-md'>Description: {item.description}</p>
+              </div>
             </div>
           </div>
         )

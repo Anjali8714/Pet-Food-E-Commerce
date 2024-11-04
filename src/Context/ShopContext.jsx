@@ -35,10 +35,7 @@ const ShopContextProvider = ({ children }) => {
     }, []); 
 
     useEffect(() => {
-        // if(!id){
-        //     return
-        // }
-        // if(id){
+        
         let id=localStorage.getItem('id')
             axios.get(`http://localhost:3001/user/${id}`)
             .then((res) => {
@@ -46,12 +43,9 @@ const ShopContextProvider = ({ children }) => {
             })
             .catch((error) => console.log(error));
           
-        // }
-        // else{
-        //     setCart([])
-        // }
+       
     },[])
-    // console.count('hii')
+   
 
     useEffect(() => {
         const id = localStorage.getItem("id"); 
@@ -78,19 +72,13 @@ const ShopContextProvider = ({ children }) => {
         }else{
             const updatedCart = [...cart , item];
            
-
-            // axios
-            // //  .patch(`http://localhost:3001/user/${id}`,{cart : updatedCart})
-            //  .then((res) => console.log(`success`))
-            //  .catch((error) => console.log(`error`))
-
             axios 
             .patch(`http://localhost:3001/user/${id}` , {cart : updatedCart})
             .then((res) => console.log('success'))
             .catch((error) => console.log(`error`))
             
+            setCart(updatedCart)
         }
-        setCart(updatedCart)
         
     }
 
