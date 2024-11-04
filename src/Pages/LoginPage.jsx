@@ -1,15 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { MdOutlineMail } from "react-icons/md";
 import { RxLockClosed } from "react-icons/rx";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { toast } from 'react-toastify';
+import { Shopcontext } from '../Context/ShopContext';
 
 const LoginPage = () => {
   const navigate = useNavigate() 
   const [user , setUser] = useState()
-
+const {setIsloggedIn}=useContext(Shopcontext)
 
   const validation = Yup.object({
     email :Yup.string().email('Invalid email').required('Required'),
@@ -20,7 +22,7 @@ const LoginPage = () => {
       try {
         const response = await axios.get(`http://localhost:3001/user`);
         setUser(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       } catch (error) {
         console.error("Error fetching user data:", error);
       }
@@ -31,13 +33,14 @@ const LoginPage = () => {
       if (foundUser) {
         localStorage.setItem('id', foundUser.id);  
         localStorage.setItem('name', foundUser.username);  
-        alert('Login successful');
+        toast.success('Login successful');
+        setIsloggedIn(true)
         setTimeout(() => {
           navigate('/');
         }, 1000);
       } 
       else {
-        alert('Invalid email or password');
+       toast.success('Invalid email or password');
       }
     };
 

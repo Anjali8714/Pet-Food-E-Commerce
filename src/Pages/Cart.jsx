@@ -1,10 +1,25 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { Shopcontext } from '../Context/ShopContext'
 import { useNavigate } from 'react-router-dom'
+import axios from 'axios'
 
 const Cart = () => {
 const navigate = useNavigate()
-const {cart ,removeFromcart , incrementQuantity , decrementQuantity} = useContext(Shopcontext)
+const [cart,setCart]=useState([])
+const {cart:updatedcart, removeFromcart , incrementQuantity , decrementQuantity} = useContext(Shopcontext)
+const id=localStorage.getItem('id')
+useEffect(() => {
+ 
+  if(id){
+      axios.get(`http://localhost:3001/user/${id}`)
+      .then((res) => {
+          setCart(res.data.cart);
+      })
+      .catch((error) => console.log(error));
+    
+  }
+ 
+},[updatedcart])
   
   return (
     <div className="min-h-screen p-6 bg-gray-100">
