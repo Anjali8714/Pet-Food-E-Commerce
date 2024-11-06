@@ -1,6 +1,6 @@
 import axios from "axios";
 import { createContext, useEffect, useState } from "react";
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 
 export const Shopcontext = createContext();
@@ -13,6 +13,7 @@ const ShopContextProvider = ({ children }) => {
        
     const id = localStorage.getItem('id');
     const name=localStorage.getItem('name');
+
     useEffect(()=>{
         const id = localStorage.getItem('id');
       if(id){
@@ -22,6 +23,7 @@ const ShopContextProvider = ({ children }) => {
         setIsloggedIn(false)
       }
     },[])
+
     useEffect(() => { 
         async function fetchData() {
             try {
@@ -143,7 +145,9 @@ const addToOrder = (orderdata) => {
 }
 
     return (
-        <Shopcontext.Provider value={{ products , cart , addToCart , removeFromcart , incrementQuantity , decrementQuantity , setCart , addToOrder,isLoggedIn,id,name,setIsloggedIn }}>
+        <Shopcontext.Provider value={{ products , cart , addToCart , 
+        removeFromcart , incrementQuantity , decrementQuantity , setCart ,
+         addToOrder , isLoggedIn , id , name , setIsloggedIn , setProducts}}>
             {children}
         </Shopcontext.Provider>
     );

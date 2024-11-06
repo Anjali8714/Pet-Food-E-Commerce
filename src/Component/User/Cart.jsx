@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Shopcontext } from '../Context/ShopContext'
+import { Shopcontext } from '../../Context/ShopContext'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
+import Navbar from '../Navbar/Navbar'
 
 const Cart = () => {
+
 const navigate = useNavigate()
 const [cart,setCart]=useState([])
 const {cart:updatedcart, removeFromcart , incrementQuantity , decrementQuantity} = useContext(Shopcontext)
@@ -22,6 +24,8 @@ useEffect(() => {
 },[updatedcart])
   
   return (
+    <div>
+      <Navbar/>
     <div className="min-h-screen p-6 bg-gray-100">
 
       {cart.length === 0 ? (<h1 className="text-2xl font-semibold text-center text-gray-700">Your cart is empty</h1>
@@ -70,6 +74,7 @@ useEffect(() => {
     
         )}
       
+    </div>
     </div>
   )
 }

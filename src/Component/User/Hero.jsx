@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
+
 const Hero = () => {
   
 
@@ -8,6 +9,7 @@ const Hero = () => {
 
   return (
     <div className='flex flex-col md:flex-row border border-gray-400'>
+      
       {/* Hero left side */}
       <div className='w-full sm:w-1/2 flex items-center justify-center py-10 sm:py-10'>
         <div className='text-[#414141]'>

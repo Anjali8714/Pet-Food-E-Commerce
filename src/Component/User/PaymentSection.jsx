@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
-import { Shopcontext } from '../Context/ShopContext';
+import { Shopcontext } from '../../Context/ShopContext';
 import { useNavigate } from 'react-router-dom';
+import Navbar from '../Navbar/Navbar';
 
 const PaymentSection = () => {
   const navigate = useNavigate();
@@ -35,7 +36,11 @@ const PaymentSection = () => {
   };
 
   return (
+    <div>
+      <Navbar/>
+    
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
+       
       <form onSubmit={handleSubmit} className="w-full max-w-lg p-8 bg-white shadow-lg rounded-lg">
         <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Payment Details</h2>
 
@@ -153,6 +158,7 @@ const PaymentSection = () => {
           Confirm Payment
         </button>
       </form>
+    </div>
     </div>
   );
 };

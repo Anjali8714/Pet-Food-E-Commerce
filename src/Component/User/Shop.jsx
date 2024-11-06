@@ -1,14 +1,13 @@
 import React, { useContext, useState,useEffect} from 'react'
-import  { Shopcontext } from '../Context/ShopContext';
+import  { Shopcontext } from '../../Context/ShopContext';
 import { CiSearch } from "react-icons/ci";
-
-
-
+import Navbar from '../Navbar/Navbar';
 
 const Shop = () => {
 
 const [search , setSearch]  = useState('');
 const [filtered , setFiltered] = useState([]);
+
 
 const {products , addToCart} = useContext(Shopcontext);
 
@@ -37,10 +36,10 @@ useEffect(() => {
 }, [ search, products]);
 
   return (
-  
-
-
+  <div>
+    <Navbar/>
     <div className='p-4'>
+      
     <div className="flex items-center justify-center bg-white border border-gray-300 rounded-md p-2 w-60 h-10 mx-auto">
   <CiSearch className="text-gray-500 text-xl mr-2" />
   <input type="text" placeholder="Search..." className="w-full outline-none text-gray-700"  onChange={searchBarhandle}/>
@@ -68,7 +67,7 @@ useEffect(() => {
 
       
     </div>
-
+    </div>
   )
 }
 export default Shop

@@ -22,15 +22,25 @@ const {setIsloggedIn}=useContext(Shopcontext)
       try {
         const response = await axios.get(`http://localhost:3001/user`);
         setUser(response.data);
-        // console.log(response.data);
-      } catch (error) {
-        console.error("Error fetching user data:", error);
-      }
 
+        const admindata =  values.email === 'admin@gmail.com' && values.password === '12345678';
+      // console.log(admindata);
       
-      const foundUser = user.find(item => item.email === values.email && item.password === values.password);
-    
-      if (foundUser) {
+      const foundUser = response.data.find(item => item.email === values.email && item.password === values.password);
+      // console.log(foundUser);
+
+      if(admindata){
+        localStorage.setItem('id',"admin");
+        toast.success('Admin logged in successfully')
+        // console.log(admindata);
+        
+        setIsloggedIn(true);
+        setTimeout(() => {
+          navigate('/admin')
+        },1000)
+        
+      }
+      else if (foundUser) {
         localStorage.setItem('id', foundUser.id);  
         localStorage.setItem('name', foundUser.username);  
         toast.success('Login successful');
@@ -42,6 +52,17 @@ const {setIsloggedIn}=useContext(Shopcontext)
       else {
        toast.success('Invalid email or password');
       }
+        // console.log(response.data);
+      } catch (error) {
+        console.error("Error fetching user data:", error);
+      }
+
+      
+      
+      
+      
+
+      
     };
 
    

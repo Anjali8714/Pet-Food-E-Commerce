@@ -12,16 +12,7 @@
           "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
           "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
           "price": 129,
-          "quantity": 6,
-          "category": "Dog"
-        },
-        {
-          "id": "1",
-          "title": "Pedigree",
-          "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg",
-          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-          "price": 599,
-          "quantity": 1,
+          "quantity": 8,
           "category": "Dog"
         },
         {
@@ -30,17 +21,8 @@
           "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-122681970.jpg",
           "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
           "price": 679,
-          "quantity": 1,
+          "quantity": 5,
           "category": "Cat"
-        },
-        {
-          "id": "6",
-          "title": "Healthy Pet Food",
-          "url": "https://www.puprise.com/wp-content/uploads/2019/08/Himalaya-Healthy-Pet-Food-Meat-Rice-Dog-Food.jpg",
-          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-          "price": 459,
-          "quantity": 1,
-          "category": "Dog"
         },
         {
           "id": "3",
@@ -48,7 +30,7 @@
           "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-global-brand-produced-nestle-petcare-st-louis-missouri-based-subsidiary-122681903.jpg",
           "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
           "price": 479,
-          "quantity": 5,
+          "quantity": 1,
           "category": "Cat"
         },
         {
@@ -441,39 +423,12 @@
   ],
   "products": [
     {
-      "id": "1",
-      "title": "Pedigree",
-      "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 599,
-      "quantity": 1,
-      "category": "Dog"
-    },
-    {
-      "id": "2",
-      "title": "Freshpet",
-      "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 129,
-      "quantity": 10,
-      "category": "Dog"
-    },
-    {
-      "id": "3",
-      "title": "Whiskas",
-      "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-global-brand-produced-nestle-petcare-st-louis-missouri-based-subsidiary-122681903.jpg",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 479,
-      "quantity": 5,
-      "category": "Cat"
-    },
-    {
       "id": "4",
       "title": "Friskies",
       "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-122681970.jpg",
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 679,
-      "quantity": 1,
+      "quantity": 5,
       "category": "Cat"
     },
     {
@@ -527,7 +482,7 @@
       "url": "https://kitcat.com.sg/wp-content/uploads/2022/02/DRY-Food-Catagory.png",
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 399,
-      "quantity": 1,
+      "quantity": 10,
       "category": "Cat"
     },
     {
@@ -550,12 +505,12 @@
     },
     {
       "id": "13",
-      "title": "Royal Canin",
-      "url": "https://www.designerpeople.com/wp-content/uploads/2020/06/dog-food-packaging-design-2.jpg",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+      "title": "pedigree",
       "price": 599,
-      "quantity": 1,
-      "category": "Dog"
+      "quantity": "5",
+      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+      "category": "Dog",
+      "url": "https://www.designerpeople.com/wp-content/uploads/2020/06/dog-food-packaging-design-2.jpg"
     },
     {
       "id": "14",
@@ -563,7 +518,7 @@
       "url": "https://s7d1.scene7.com/is/image/PETCO/2393661-center-1",
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 849,
-      "quantity": 1,
+      "quantity": 21,
       "category": "Cat"
     },
     {
@@ -590,7 +545,7 @@
       "url": "https://assets.iceland.co.uk/i/iceland/Go-Cat_Adult_Dry_Cat_Food_Chicken_and_Duck_10kg_71128_T1.jpg?$pdpzoom$",
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 549,
-      "quantity": 1,
+      "quantity": 14,
       "category": "Cat"
     }
   ]

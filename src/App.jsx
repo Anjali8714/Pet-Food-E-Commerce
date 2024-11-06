@@ -1,17 +1,16 @@
 import React from 'react'
-import Navbar from './Component/Navbar/Navbar'
 import { Routes,Route } from 'react-router-dom'
-import Home from './Pages/Home'
-import Shop from './Pages/Shop'
-import Category from './Pages/Category'
-import Cart from './Pages/Cart'
+import Home from './Component/User/Home'
+import Shop from './Component/User/Shop'
+import Category from './Component/User/Category'
+import Cart from './Component/User/Cart'
 import LoginPage from './Pages/LoginPage'
 import RegistrationPage from './Pages/RegistrationPage'
-import PaymentSection from './Pages/PaymentSection'
+import PaymentSection from './Component/User/PaymentSection'
 import { Toaster } from 'react-hot-toast'
+import Order from './Component/User/Order'
+import HomePage from './Component/Admin/HomePage'
 import Footer from './Component/Footer'
-import Order from './Pages/Order'
-
 
 function App() {
   
@@ -19,7 +18,7 @@ function App() {
   return (
     <>
         <Toaster/>
-        <Navbar/>
+        
         <Routes>
           <Route path='/' Component={Home}/>
           <Route path='shop' Component={Shop}/>
@@ -29,7 +28,7 @@ function App() {
           <Route path='registration' Component={RegistrationPage}/>
           <Route path='paymentpage' Component={PaymentSection}/>
           <Route path='order' Component={Order}/>
-        
+          <Route path='admin' Component={HomePage}/>
           
         </Routes>
         {/* <Footer/> */}

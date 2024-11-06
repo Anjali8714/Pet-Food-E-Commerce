@@ -1,10 +1,11 @@
 import axios from "axios";
 import React, { useState, useEffect, useContext } from "react";
-import { Shopcontext } from "../Context/ShopContext";
+import { Shopcontext } from "../../Context/ShopContext";
 import toast from "react-hot-toast";
-
+import Navbar from '../Navbar/Navbar'
 
 const FilteredProduct = () => {
+  
   const [datas, setDatas] = useState([]);
   const [category, setCategory] = useState("All");
   const {  addToCart } = useContext(Shopcontext);
@@ -25,7 +26,11 @@ const FilteredProduct = () => {
    
 
   return (
+    <div>
+      <Navbar/>
+    
     <div className="p-4 ">
+      
       <div className="mb-4">
         <label htmlFor="category" className="mr-2"> Filter by category: </label>
         <select id="category" value={category} onChange={handleCategoryChange} className="p-2 border border-gray-300 rounded" >
@@ -52,6 +57,7 @@ const FilteredProduct = () => {
           </li>
         ))}
       </ul>
+    </div>
     </div>
   );
 };

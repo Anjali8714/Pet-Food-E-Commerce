@@ -1,12 +1,18 @@
 import React, { useContext } from 'react'
-import { Shopcontext } from '../Context/ShopContext'
+import { Shopcontext } from '../../Context/ShopContext'
+import Navbar from '../Navbar/Navbar'
 
 
 const Order = () => {
+  
   const {cart} = useContext(Shopcontext)
   
   return (
+    <div>
+      <Navbar/>
+    
     <div className='border-t pt-16'>
+       
      <div className='text-2xl'>
       <h4 >My Order</h4>
      </div>
@@ -28,6 +34,7 @@ const Order = () => {
       )
       }
      </div>
+    </div>
     </div>
   )
 }
