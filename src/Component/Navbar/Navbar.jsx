@@ -30,9 +30,6 @@ const Navbar = () => {
     navigate('/login');
   };
 
-
-  
-
   return (
     <div className="bg-yellow-400">
       <div className="container flex flex-col md:flex-row justify-between items-center p-4">

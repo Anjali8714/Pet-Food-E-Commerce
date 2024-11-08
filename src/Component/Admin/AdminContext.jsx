@@ -1,4 +1,4 @@
-import React, { createContext, useContext } from 'react'
+import React, { createContext, useContext, useEffect, useState } from 'react'
 import { Shopcontext } from '../../Context/ShopContext';
 import axios from 'axios';
 import toast from 'react-hot-toast';
@@ -8,7 +8,34 @@ export const Admincontext = createContext();
 
 const AdminContext = ({children}) => {
 
-const {products,setProducts} = useContext(Shopcontext)    
+const {products,setProducts} = useContext(Shopcontext) 
+const [User , setUser] = useState([])   
+
+useEffect (() => {
+    async function fetchUser(){
+        try {
+            const response = await axios.get(`http://localhost:3001/user`);
+            setUser(response.data);
+        }
+        catch(error){
+            console.log(error.message);
+            
+        }
+    }
+    fetchUser();
+},[]);
+
+const Block = async(id,status) =>{
+    try{
+        await axios.patch(`http://localhost:3001/user/${id}`,{status : !status})
+        setUser(User.map((userlist) => (userlist.id === id ? {...userlist , status : !status} : {...userlist})))
+    }
+    catch(error){
+        console.log(error.message);
+        
+    }
+}
+
 
     const editFormData=async(product)=>{
         try{
@@ -28,10 +55,11 @@ const {products,setProducts} = useContext(Shopcontext)
     }
 
     const DeleteProduct = async(id) => {
+       
+        
         try{
-            await axios.delete(`http://localhost:3001/products/${id}`)
-            const updatedValue = products.filter((p) => p.id !== id)
-            setProducts(updatedValue)
+            await axios.delete(`http://localhost:3001/products/${id}`);
+            setProducts((prevProducts) =>prevProducts.filter((p) => p.id !== id));
             toast.success('Delete successfully....')
         }
         catch(error){
@@ -40,9 +68,20 @@ const {products,setProducts} = useContext(Shopcontext)
         }
     }
 
-
+    const addingData = async(newProduct) => {
+        try{
+            await axios.post(`http://localhost:3001/products`,newProduct)
+            setProducts([...products,newProduct])
+            toast.success('New product added successfully')
+           // window.location.reload()
+        }
+        catch(error){
+            console.log(error.message);
+            
+        }
+    }
   return (
-    <Admincontext.Provider value={ {editFormData , DeleteProduct}}>
+    <Admincontext.Provider value={ {editFormData , DeleteProduct , addingData , User ,Block}}>
         {children}
     </Admincontext.Provider>
   )

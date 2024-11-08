@@ -9,12 +9,13 @@ import RegistrationPage from './Pages/RegistrationPage'
 import PaymentSection from './Component/User/PaymentSection'
 import { Toaster } from 'react-hot-toast'
 import Order from './Component/User/Order'
-import HomePage from './Component/Admin/HomePage'
 import Footer from './Component/Footer'
+import AdminNavbar from './Component/Admin/AdminNavbar'
+import UserPage from './Component/Admin/UserPage'
+import AdminProductPage from './Component/Admin/AdminProductPage'
+import Dashboard from './Component/Admin/Dashboard'
 
 function App() {
-  
-
   return (
     <>
         <Toaster/>
@@ -28,8 +29,12 @@ function App() {
           <Route path='registration' Component={RegistrationPage}/>
           <Route path='paymentpage' Component={PaymentSection}/>
           <Route path='order' Component={Order}/>
-          <Route path='admin' Component={HomePage}/>
           
+          <Route path='admin' Component={AdminNavbar}>
+            <Route path='products' Component={AdminProductPage}/>
+            <Route path='userpage' Component={UserPage} />
+            <Route path='dashboard' Component={Dashboard}/>
+          </Route>
         </Routes>
         {/* <Footer/> */}
         
