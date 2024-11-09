@@ -7,11 +7,13 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 import { Shopcontext } from '../Context/ShopContext';
+// import { Admincontext } from '../Component/Admin/AdminContext';
 
 const LoginPage = () => {
   const navigate = useNavigate() 
   const [user , setUser] = useState()
 const {setIsloggedIn}=useContext(Shopcontext)
+// const {setLogged} = useContext(Admincontext)
 
   const validation = Yup.object({
     email :Yup.string().email('Invalid email').required('Required'),
@@ -32,6 +34,7 @@ const {setIsloggedIn}=useContext(Shopcontext)
       if(admindata){
         localStorage.setItem('id',"admin");
         toast.success('Admin logged in successfully')
+        // setLogged(true)
         // console.log(admindata);
         
         setIsloggedIn(true);

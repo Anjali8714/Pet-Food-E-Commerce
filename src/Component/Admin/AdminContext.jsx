@@ -9,7 +9,8 @@ export const Admincontext = createContext();
 const AdminContext = ({children}) => {
 
 const {products,setProducts} = useContext(Shopcontext) 
-const [User , setUser] = useState([])   
+const [User , setUser] = useState([]) 
+const [logged , setLogged] = useState(null)  
 
 useEffect (() => {
     async function fetchUser(){
@@ -81,7 +82,7 @@ const Block = async(id,status) =>{
         }
     }
   return (
-    <Admincontext.Provider value={ {editFormData , DeleteProduct , addingData , User ,Block}}>
+    <Admincontext.Provider value={ {editFormData , DeleteProduct , addingData , User ,Block , logged , setLogged}}>
         {children}
     </Admincontext.Provider>
   )

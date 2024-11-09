@@ -21,9 +21,9 @@ const AdminProductPage = () => {
     description: "",
     url: "",
   };
-  useEffect(() => {
-    console.log("page reload");
-  }, [products]);
+  // useEffect(() => {
+  //   console.log("page reload");
+  // }, [products]);
   
 
   const validation = Yup.object({
@@ -78,8 +78,8 @@ const AdminProductPage = () => {
   </button>
 </div>
 
-
-      <table className="w-full text-sm text-gray-900">
+<div className="w-11/12 mx-auto my-4 overflow-x-auto">
+      <table className="w-full text-sm text-gray-900 border-collapse border border-gray-300">
         <thead className="text-xs text-white bg-gray-700">
           <tr>
             <th className='p-4 text-center'>PRODUCT NAME</th>
@@ -246,6 +246,7 @@ const AdminProductPage = () => {
         </div>
       )}
 
+    </div>
     </div>
   );
 };

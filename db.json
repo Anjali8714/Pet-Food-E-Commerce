@@ -7,22 +7,40 @@
       "password": "123456789",
       "cart": [
         {
-          "id": "deb9",
-          "title": "qwert",
-          "price": "600",
-          "quantity": "5",
-          "category": "Cat",
-          "description": "kjhgfds",
-          "url": "https://aller-petfood.com/wp-content/uploads/2017/09/ALL_CAT.jpg"
+          "id": "6",
+          "title": "Healthy Pet Food",
+          "price": "420",
+          "quantity": 1,
+          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+          "category": "Dog",
+          "url": "https://www.puprise.com/wp-content/uploads/2019/08/Himalaya-Healthy-Pet-Food-Meat-Rice-Dog-Food.jpg"
         },
         {
-          "id": "0ca4",
-          "title": "ertgbn",
-          "price": "345",
-          "quantity": "4",
-          "category": "Cat",
+          "id": "7",
+          "title": "Milk Bone",
+          "price": 599,
+          "quantity": "19",
           "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-          "url": "https://s7d1.scene7.com/is/image/PETCO/2384976-center-1"
+          "category": "Dog",
+          "url": "https://i.pinimg.com/originals/ce/95/80/ce9580a098ececc425c02c2a45b42263.jpg"
+        },
+        {
+          "id": "15",
+          "title": "Gather",
+          "price": 449,
+          "quantity": 0,
+          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+          "category": "Dog",
+          "url": "https://ucarecdn.com/e2e062f5-b963-4a4a-ad59-80ba371a88dd/-/quality/lighter/-/format/auto/-/scale_crop/1920x1080/center/"
+        },
+        {
+          "id": "13",
+          "title": "pedigree",
+          "price": 599,
+          "quantity": 5,
+          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+          "category": "Dog",
+          "url": "https://www.designerpeople.com/wp-content/uploads/2020/06/dog-food-packaging-design-2.jpg"
         }
       ],
       "order": [
@@ -57,7 +75,7 @@
           "date": "2024-11-07T09:51:30.033Z"
         }
       ],
-      "status": true
+      "status": false
     },
     {
       "id": "0211",
@@ -123,24 +141,6 @@
               "price": 849,
               "quantity": 1,
               "category": "Cat"
-            },
-            {
-              "id": "2",
-              "title": "Freshpet",
-              "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 129,
-              "quantity": 2,
-              "category": "Dog"
-            },
-            {
-              "id": "5",
-              "title": "Felix Junior",
-              "url": "https://dailyhornet.com/wp-content/uploads/2018/11/Dog-Food-Generic.jpg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 789,
-              "quantity": 1,
-              "category": "Cat"
             }
           ],
           "total": 3174,
@@ -150,191 +150,38 @@
           "cardNumber": "",
           "paymentMethod": "cash",
           "date": "2024-11-02T10:31:26.741Z"
-        },
-        {
-          "id": 1730543709818,
-          "items": [
-            {
-              "id": "4",
-              "title": "Friskies",
-              "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-122681970.jpg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 679,
-              "quantity": 1,
-              "category": "Cat"
-            },
-            {
-              "id": "14",
-              "title": "Royal Canin",
-              "url": "https://s7d1.scene7.com/is/image/PETCO/2393661-center-1",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 849,
-              "quantity": 1,
-              "category": "Cat"
-            },
-            {
-              "id": "2",
-              "title": "Freshpet",
-              "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 129,
-              "quantity": 2,
-              "category": "Dog"
-            },
-            {
-              "id": "5",
-              "title": "Felix Junior",
-              "url": "https://dailyhornet.com/wp-content/uploads/2018/11/Dog-Food-Generic.jpg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 789,
-              "quantity": 1,
-              "category": "Cat"
-            }
-          ],
-          "total": 2575,
-          "name": "Midhun",
-          "address": "dfgbhnjyhjnx dcfvbnhjk mol,zsx ",
-          "state": "xcvb",
-          "cardNumber": "",
-          "paymentMethod": "cash",
-          "date": "2024-11-02T10:35:09.818Z"
-        },
-        {
-          "id": 1730544206324,
-          "items": [
-            {
-              "id": "4",
-              "title": "Friskies",
-              "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-122681970.jpg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 679,
-              "quantity": 1,
-              "category": "Cat"
-            },
-            {
-              "id": "14",
-              "title": "Royal Canin",
-              "url": "https://s7d1.scene7.com/is/image/PETCO/2393661-center-1",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 849,
-              "quantity": 1,
-              "category": "Cat"
-            },
-            {
-              "id": "2",
-              "title": "Freshpet",
-              "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 129,
-              "quantity": 2,
-              "category": "Dog"
-            },
-            {
-              "id": "5",
-              "title": "Felix Junior",
-              "url": "https://dailyhornet.com/wp-content/uploads/2018/11/Dog-Food-Generic.jpg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 789,
-              "quantity": 1,
-              "category": "Cat"
-            }
-          ],
-          "total": 2575,
-          "name": "erghb",
-          "address": "cfvgbh",
-          "state": "cgbh",
-          "cardNumber": "",
-          "paymentMethod": "cash",
-          "date": "2024-11-02T10:43:26.324Z"
-        },
-        {
-          "id": 1730544761816,
-          "items": [
-            {
-              "id": "4",
-              "title": "Friskies",
-              "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-122681970.jpg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 679,
-              "quantity": 1,
-              "category": "Cat"
-            },
-            {
-              "id": "14",
-              "title": "Royal Canin",
-              "url": "https://s7d1.scene7.com/is/image/PETCO/2393661-center-1",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 849,
-              "quantity": 1,
-              "category": "Cat"
-            },
-            {
-              "id": "2",
-              "title": "Freshpet",
-              "url": "https://i5.walmartimages.com/asr/3e552f48-0100-449b-b270-869b975abbb7_1.1dc3b3e060342c822f8a795c6bad4ca8.jpeg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 129,
-              "quantity": 2,
-              "category": "Dog"
-            },
-            {
-              "id": "5",
-              "title": "Felix Junior",
-              "url": "https://dailyhornet.com/wp-content/uploads/2018/11/Dog-Food-Generic.jpg",
-              "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-              "price": 789,
-              "quantity": 1,
-              "category": "Cat"
-            }
-          ],
-          "total": 2575,
-          "name": " nvdffftfcfsder",
-          "address": "cfvgb",
-          "state": "bn",
-          "cardNumber": "fgvbh",
-          "paymentMethod": "card",
-          "date": "2024-11-02T10:52:41.816Z"
         }
       ],
       "status": true
+    },
+    {
+      "id": "580e",
+      "username": "irshna",
+      "email": "irshana@123gmail.com",
+      "password": "123456789",
+      "cart": [],
+      "order": [],
+      "status": true
+    },
+    {
+      "id": "5eaf",
+      "username": "Haneena",
+      "email": "haneena123@gmail.com",
+      "password": "123456789",
+      "cart": [],
+      "order": [],
+      "status": false
     }
   ],
   "products": [
     {
-      "id": "5",
-      "title": "Felix Junior",
-      "url": "https://dailyhornet.com/wp-content/uploads/2018/11/Dog-Food-Generic.jpg",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 789,
-      "quantity": 1,
-      "category": "Cat"
-    },
-    {
       "id": "6",
       "title": "Healthy Pet Food",
-      "url": "https://www.puprise.com/wp-content/uploads/2019/08/Himalaya-Healthy-Pet-Food-Meat-Rice-Dog-Food.jpg",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 459,
+      "price": "420",
       "quantity": 1,
-      "category": "Dog"
-    },
-    {
-      "id": "7",
-      "title": "Milk Bone",
-      "url": "https://i.pinimg.com/originals/ce/95/80/ce9580a098ececc425c02c2a45b42263.jpg",
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 599,
-      "quantity": 1,
-      "category": "Dog"
-    },
-    {
-      "id": "8",
-      "title": "Cesor",
-      "url": "https://s7d1.scene7.com/is/image/PETCO/2384976-center-1",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 359,
-      "quantity": 1,
-      "category": "Dog"
+      "category": "Dog",
+      "url": "https://www.puprise.com/wp-content/uploads/2019/08/Himalaya-Healthy-Pet-Food-Meat-Rice-Dog-Food.jpg"
     },
     {
       "id": "9",
@@ -357,11 +204,11 @@
     {
       "id": "11",
       "title": "Meow",
-      "url": "https://www.topvaluereviews.net/wp-content/uploads/2016/05/811rpY-l4L._SL1500_.jpg",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 699,
-      "quantity": 1,
-      "category": "Cat"
+      "quantity": "56",
+      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+      "category": "Cat",
+      "url": "https://www.topvaluereviews.net/wp-content/uploads/2016/05/811rpY-l4L._SL1500_.jpg"
     },
     {
       "id": "12",
@@ -376,7 +223,7 @@
       "id": "13",
       "title": "pedigree",
       "price": 599,
-      "quantity": "5",
+      "quantity": 5,
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "category": "Dog",
       "url": "https://www.designerpeople.com/wp-content/uploads/2020/06/dog-food-packaging-design-2.jpg"
@@ -393,11 +240,11 @@
     {
       "id": "15",
       "title": "Gather",
-      "url": "https://ucarecdn.com/e2e062f5-b963-4a4a-ad59-80ba371a88dd/-/quality/lighter/-/format/auto/-/scale_crop/1920x1080/center/",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 449,
-      "quantity": 1,
-      "category": "Dog"
+      "quantity": 0,
+      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+      "category": "Dog",
+      "url": "https://ucarecdn.com/e2e062f5-b963-4a4a-ad59-80ba371a88dd/-/quality/lighter/-/format/auto/-/scale_crop/1920x1080/center/"
     },
     {
       "id": "16",
@@ -421,19 +268,10 @@
       "id": "3563",
       "title": "Pedigree",
       "price": "450",
-      "quantity": "4",
-      "category": "Dog",
+      "quantity": "23",
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg"
-    },
-    {
-      "id": "1c32",
-      "title": "Pedigree",
-      "price": "600",
-      "quantity": "3",
       "category": "Dog",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100gsxdcfvg,k.l;",
-      "url": "https://thumbs.dreamstime.com/z/purina-pet-food-products-poznan-pol-jul-global-brand-produced-nestle-petcare-st-louis-missouri-based-subsidiary-122681903.jpg"
+      "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg"
     }
   ]
 }

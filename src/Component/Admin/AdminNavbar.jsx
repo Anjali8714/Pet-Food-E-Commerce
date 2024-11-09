@@ -10,9 +10,9 @@ const AdminNavbar = () => {
   return (
     <div className='flex'>
     <div className='bg-gray-900 md:w-64 lg:w-72 min-h-screen text-white flex flex-col items-center py-6'>
-      <div className='flex items-center space-x-2 mb-6'>
-          <MdOutlinePets size={45} />
-          <SiPetsathome size={75} />
+      <div className='flex items-center space-x-3 mb-28'>
+          <MdOutlinePets size={75} />
+          <SiPetsathome size={100} />
         </div>
 
       <div className='space-y-4 w-full text-center'>
@@ -26,6 +26,7 @@ const AdminNavbar = () => {
       
       </div> 
     </div>
+    
       <div>
       <Outlet/>
       </div>

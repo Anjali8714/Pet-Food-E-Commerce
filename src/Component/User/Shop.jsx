@@ -2,9 +2,11 @@ import React, { useContext, useState,useEffect} from 'react'
 import  { Shopcontext } from '../../Context/ShopContext';
 import { CiSearch } from "react-icons/ci";
 import Navbar from '../Navbar/Navbar';
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 const Shop = () => {
-
+const navigate = useNavigate()
 const [search , setSearch]  = useState('');
 const [filtered , setFiltered] = useState([]);
 
@@ -58,7 +60,15 @@ useEffect(() => {
             {product.quantity === 0 && (<span className='text-red-500 py-1 px-3 inline-block mt-2'>Out of stock</span>)}     
 
           </div>
-          <button onClick={()=>addToCart(product)} className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Add to Cart</button>
+          <button onClick={()=>{
+            if(localStorage.getItem('id')){
+            addToCart(product)
+          }
+          else{
+            toast.success('Please login')
+            setTimeout(() => navigate('/login'),1000)
+            
+          }}} className="mt-4 w-full bg-blue-500 text-white py-2 rounded hover:bg-blue-600">Add to Cart</button>
         </div>
 ))}
 </div>
