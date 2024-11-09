@@ -14,6 +14,7 @@ import UserPage from './Component/Admin/UserPage'
 import AdminProductPage from './Component/Admin/AdminProductPage'
 import Dashboard from './Component/Admin/Dashboard'
 import MainLayout from './Component/User/MainLayout'
+import ProtectedAdmin from './Component/Admin/ProtectedAdmin'
 
 function App() {
   return (
@@ -33,8 +34,8 @@ function App() {
           <Route path='login' Component={LoginPage} />
           <Route path='registration' Component={RegistrationPage}/>
           
-          <Route path='admin' Component={AdminNavbar}>
-            <Route path='products' Component={AdminProductPage}/>
+          <Route  element={<ProtectedAdmin><AdminNavbar /></ProtectedAdmin>} >
+            <Route path='admin' Component={AdminProductPage}/>
             <Route path='userpage' Component={UserPage} />
             <Route path='dashboard' Component={Dashboard}/>
           </Route>

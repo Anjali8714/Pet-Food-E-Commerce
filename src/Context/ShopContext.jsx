@@ -68,10 +68,11 @@ const ShopContextProvider = ({ children }) => {
        
         
         if(findCart) {
-            toast.success('Item added successfully🛒');
+            toast.success('This item already added 🛒');
             return;
             
         }else{
+            toast.success('Item added successfully🛒');
             const updatedCart = [...cart , item];
            
             axios 

@@ -5,15 +5,15 @@ import { MdOutlineMail } from "react-icons/md";
 import { RxLockClosed } from "react-icons/rx";
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 import { Shopcontext } from '../Context/ShopContext';
-// import { Admincontext } from '../Component/Admin/AdminContext';
+
 
 const LoginPage = () => {
   const navigate = useNavigate() 
   const [user , setUser] = useState()
 const {setIsloggedIn}=useContext(Shopcontext)
-// const {setLogged} = useContext(Admincontext)
+
 
   const validation = Yup.object({
     email :Yup.string().email('Invalid email').required('Required'),
@@ -26,16 +26,15 @@ const {setIsloggedIn}=useContext(Shopcontext)
         setUser(response.data);
 
         const admindata =  values.email === 'admin@gmail.com' && values.password === '12345678';
-      // console.log(admindata);
       
       const foundUser = response.data.find(item => item.email === values.email && item.password === values.password);
-      // console.log(foundUser);
+      
 
       if(admindata){
-        localStorage.setItem('id',"admin");
+        // localStorage.setItem('id',"admin");
         toast.success('Admin logged in successfully')
-        // setLogged(true)
-        // console.log(admindata);
+        
+        
         
         setIsloggedIn(true);
         setTimeout(() => {
@@ -59,19 +58,8 @@ const {setIsloggedIn}=useContext(Shopcontext)
       } catch (error) {
         console.error("Error fetching user data:", error);
       }
-
-      
-      
-      
-      
-
-      
     };
-
-   
-    
-  
-    
+ 
   return (
     <div className="max-w-md mx-auto mt-10">
       

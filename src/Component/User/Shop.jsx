@@ -3,7 +3,7 @@ import  { Shopcontext } from '../../Context/ShopContext';
 import { CiSearch } from "react-icons/ci";
 import Navbar from '../Navbar/Navbar';
 import { useNavigate } from 'react-router-dom';
-import { toast } from 'react-toastify';
+import toast from 'react-hot-toast';
 
 const Shop = () => {
 const navigate = useNavigate()

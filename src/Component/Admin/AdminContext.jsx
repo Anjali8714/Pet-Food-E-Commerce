@@ -10,7 +10,7 @@ const AdminContext = ({children}) => {
 
 const {products,setProducts} = useContext(Shopcontext) 
 const [User , setUser] = useState([]) 
-const [logged , setLogged] = useState(null)  
+ 
 
 useEffect (() => {
     async function fetchUser(){
@@ -40,14 +40,14 @@ const Block = async(id,status) =>{
 
     const editFormData=async(product)=>{
         try{
-            console.log(product);
+            
             
             const id =product.id
              const response=await axios.put(`http://localhost:3001/products/${id}`,product)
              setProducts((prevProducts) =>
                 prevProducts.map((item) => (item.id === id ? product : item))
               );
-             console.log(product)
+             
              toast.success("product updated successfully")
         }
         catch(error){
@@ -82,7 +82,7 @@ const Block = async(id,status) =>{
         }
     }
   return (
-    <Admincontext.Provider value={ {editFormData , DeleteProduct , addingData , User ,Block , logged , setLogged}}>
+    <Admincontext.Provider value={ {editFormData , DeleteProduct , addingData , User ,Block }}>
         {children}
     </Admincontext.Provider>
   )

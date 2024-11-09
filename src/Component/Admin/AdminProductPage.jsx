@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Shopcontext } from '../../Context/ShopContext';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { MdClose } from 'react-icons/md';
@@ -13,7 +13,7 @@ const AdminProductPage = () => {
   const [addProduct , setAddProduct] = useState(null)
   
   const initialValues = {
-    // id:"",
+    
     title: "",
     price: "",
     quantity: "",
@@ -27,7 +27,7 @@ const AdminProductPage = () => {
   
 
   const validation = Yup.object({
-    // id: Yup.number().required("Required").positive().integer(),
+    
     title: Yup.string().required("Required"),
     price: Yup.string().required("Required"),
     quantity: Yup.number().required("Required").positive().integer(),
@@ -195,12 +195,7 @@ const AdminProductPage = () => {
               onSubmit ={handlesubmit}
               >
                 <Form>
-                {/* <div className='p-2'>
-                  <label htmlFor="id" className='text-gray-700 w-full'>Id:</label>
-                  <Field name='id' type='text' placeholder='Enter the id' className='w-full rounded-md border-gray-300 p-2' />
-                  <ErrorMessage name='id' component='div' className='text-red-500 text-sm' />
-                </div> */}
-
+                
                 <div className='p-2'>
                   <label htmlFor="title" className='text-gray-700 w-full'>Name:</label>
                   <Field name='title' type='text' placeholder='Enter the name' className='w-full rounded-md border-gray-300 p-2' />

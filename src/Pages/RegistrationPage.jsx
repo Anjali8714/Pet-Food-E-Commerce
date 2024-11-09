@@ -17,7 +17,7 @@ const RegistrationPage = () => {
   });
 
   const onSubmit = (values) => {
-    console.log("Registration form Data :", values);
+   
     axios
       .post(`http://localhost:3001/user`, values)
       .then(() => navigate("/login"))

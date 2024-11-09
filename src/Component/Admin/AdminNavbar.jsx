@@ -16,11 +16,11 @@ const AdminNavbar = () => {
         </div>
 
       <div className='space-y-4 w-full text-center'>
-        <button onClick={() => navigate('/admin/products')} className='w-full py-2 bg-gray-600 hover:bg-gray-500 rounded-md'>Products</button>
+        <button onClick={() => navigate('/admin')} className='w-full py-2 bg-gray-600 hover:bg-gray-500 rounded-md'>Products</button>
       
-        <button onClick={() => navigate('/admin/dashboard')} className='w-full py-2 bg-gray-600 hover:bg-gray-500 rounded-md'>Dashboard</button>
+        <button onClick={() => navigate('/dashboard')} className='w-full py-2 bg-gray-600 hover:bg-gray-500 rounded-md'>Dashboard</button>
      
-        <button onClick={() => navigate('/admin/userpage')} className='w-full py-2 bg-gray-600 hover:bg-gray-500 rounded-md'>UserPage</button>
+        <button onClick={() => navigate('/userpage')} className='w-full py-2 bg-gray-600 hover:bg-gray-500 rounded-md'>UserPage</button>
       
         <button onClick={() => navigate('/login')} className="w-full py-2  rounded-md flex items-center justify-center"><IoLogOutOutline size={24} className='mr-2' /></button>
       

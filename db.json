@@ -14,33 +14,6 @@
           "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
           "category": "Dog",
           "url": "https://www.puprise.com/wp-content/uploads/2019/08/Himalaya-Healthy-Pet-Food-Meat-Rice-Dog-Food.jpg"
-        },
-        {
-          "id": "7",
-          "title": "Milk Bone",
-          "price": 599,
-          "quantity": "19",
-          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-          "category": "Dog",
-          "url": "https://i.pinimg.com/originals/ce/95/80/ce9580a098ececc425c02c2a45b42263.jpg"
-        },
-        {
-          "id": "15",
-          "title": "Gather",
-          "price": 449,
-          "quantity": 0,
-          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-          "category": "Dog",
-          "url": "https://ucarecdn.com/e2e062f5-b963-4a4a-ad59-80ba371a88dd/-/quality/lighter/-/format/auto/-/scale_crop/1920x1080/center/"
-        },
-        {
-          "id": "13",
-          "title": "pedigree",
-          "price": 599,
-          "quantity": 5,
-          "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-          "category": "Dog",
-          "url": "https://www.designerpeople.com/wp-content/uploads/2020/06/dog-food-packaging-design-2.jpg"
         }
       ],
       "order": [
@@ -143,7 +116,7 @@
               "category": "Cat"
             }
           ],
-          "total": 3174,
+          "total": 2127,
           "name": "Midhun",
           "address": "dfgbhnjyhjnx dcfvbnhjk mol,zsx ",
           "state": "cvbn",
@@ -156,7 +129,7 @@
     },
     {
       "id": "580e",
-      "username": "irshna",
+      "username": "irshana",
       "email": "irshana@123gmail.com",
       "password": "123456789",
       "cart": [],
@@ -167,7 +140,7 @@
       "id": "5eaf",
       "username": "Haneena",
       "email": "haneena123@gmail.com",
-      "password": "123456789",
+      "password": "12345678",
       "cart": [],
       "order": [],
       "status": false
@@ -231,11 +204,11 @@
     {
       "id": "14",
       "title": "Royal Canin",
-      "url": "https://s7d1.scene7.com/is/image/PETCO/2393661-center-1",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "price": 849,
-      "quantity": 21,
-      "category": "Cat"
+      "quantity": "233333",
+      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+      "category": "Cat",
+      "url": "https://s7d1.scene7.com/is/image/PETCO/2393661-center-1"
     },
     {
       "id": "15",
@@ -256,15 +229,6 @@
       "category": "Cat"
     },
     {
-      "id": "17",
-      "title": "GoCat",
-      "url": "https://assets.iceland.co.uk/i/iceland/Go-Cat_Adult_Dry_Cat_Food_Chicken_and_Duck_10kg_71128_T1.jpg?$pdpzoom$",
-      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
-      "price": 549,
-      "quantity": 14,
-      "category": "Cat"
-    },
-    {
       "id": "3563",
       "title": "Pedigree",
       "price": "450",
@@ -272,6 +236,15 @@
       "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
       "category": "Dog",
       "url": "https://5.imimg.com/data5/AR/OA/MY-2935110/small-pack-dog-food-500x500.jpg"
+    },
+    {
+      "id": "b2c8",
+      "title": "erty",
+      "price": "345",
+      "quantity": "5",
+      "category": "Dog",
+      "description": "Adult complete & balanced food for dogs.includes chicken & Vegitables.100g",
+      "url": "https://aller-petfood.com/wp-content/uploads/2017/09/ALL_CAT.jpg"
     }
   ]
 }
